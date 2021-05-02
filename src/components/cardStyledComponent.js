@@ -52,11 +52,15 @@ background-image:url(${starwars});
 background-size:contain;
 list-style:none;
 .actor-name{
+    display:flex;
     color:#fff;
-    background-color:rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0,0.4);
     width:100%;
+    height:100%;
     text-align:center;
     cursor: pointer;
     list-style:none;
+    justify-content:center;
+    align-items:center;
 }
 `; 
