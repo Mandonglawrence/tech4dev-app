@@ -38,7 +38,7 @@ export default function CastList() {
 
     return (
             <CastListWrapper>
-            <CastListParent>
+                {cast? ( <CastListParent>
                 {cast.map((actor,pos)=> (<CastListItem key = {pos}>
                     <h1 className="actor-name" onClick={(e)=>{
                       for(let person of cast){
@@ -66,7 +66,8 @@ export default function CastList() {
                             </ModalContent>
                         </ModalWrapper>
                     </Background>):''}
-              </CastListParent>
+              </CastListParent>):(<h1>loading... please wait</h1>)}
+           
             </CastListWrapper>
         
     )
