@@ -21,7 +21,7 @@ export default function CastList() {
     }
     useEffect(()=>{
         getCastList('https://swapi.dev/api/people/');
-    },[displayModal])
+    })
 
     class User {
         constructor(name,gender,height){

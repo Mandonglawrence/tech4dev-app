@@ -1,4 +1,4 @@
-import Cast from "./components/Cast";
+
 import CastList from "./components/CastList";
 
 // import { cardContainer } from './components/styledComponents/cardStyledComponent';
