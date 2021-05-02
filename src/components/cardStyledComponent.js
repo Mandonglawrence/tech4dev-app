@@ -27,12 +27,12 @@ box-sizing:border-box;
 display:flex;
 align-items:center;
 justify-content:center;
-background:blue;
+/* background:blue; */
+height:100vh;
 
 `; 
 export const CastListParent = styled.div`
 display:flex;
-/* width:100%; */
 flex-wrap:wrap;
 background:yellow;
 align-items:center;
