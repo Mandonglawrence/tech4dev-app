@@ -12,8 +12,6 @@ export default function CastList() {
        .then(res=> res.json())
        .then(({results})=>{
            setCast(results);
-        //    console.log(results);
-           console.log("mycast",cast);
            return results;
        }
        )
@@ -40,9 +38,6 @@ export default function CastList() {
 
     return (
             <CastListWrapper>
-                {
-
-                }
             <CastListParent>
                 {cast.map((actor,pos)=> (<CastListItem key = {pos}>
                     <h1 className="actor-name" onClick={(e)=>{
@@ -50,7 +45,7 @@ export default function CastList() {
                         if(person.name === e.target.textContent){
                             const currentCast =  new User(person.name,person.gender,person.height);
                             setClickedCast(prev=> ({...prev,...currentCast.getCastDetails()}))
-                            setDisplayModal(prev=> !prev)
+                            setDisplayModal(true)
                             
                         } 
                     }
