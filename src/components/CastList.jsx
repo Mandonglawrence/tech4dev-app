@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import Cast from '../components/Cast'
 import {Background,ModalContent,ModalWrapper,CloseModalButton} from '../components/modalStyledComponents'
 import {CastListWrapper,CastListParent,CastListItem} from '../components/cardStyledComponent.js'
+import {BounceLoader} from 'react-spinners'
 
 export default function CastList() {
     const [cast, setCast] = useState([]);
@@ -66,7 +67,7 @@ export default function CastList() {
                             </ModalContent>
                         </ModalWrapper>
                     </Background>):''}
-              </CastListParent>):(<h1>loading... please wait</h1>)}
+              </CastListParent>):(<BounceLoader color='yellowgreen' size = {200}/>)}
            
             </CastListWrapper>
         
