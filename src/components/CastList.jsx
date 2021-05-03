@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 import Cast from '../components/Cast'
 import {Background,ModalContent,ModalWrapper,CloseModalButton} from '../components/modalStyledComponents'
 import {CastListWrapper,CastListParent,CastListItem} from '../components/cardStyledComponent.js'
-import {BounceLoader,BarLoader,BeatLoader} from 'react-spinners'
+import {BeatLoader} from 'react-spinners'
 
 export default function CastList() {
     const [cast, setCast] = useState([]);
