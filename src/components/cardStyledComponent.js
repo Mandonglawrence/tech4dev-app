@@ -34,7 +34,7 @@ height:100vh;
 export const CastListParent = styled.div`
 display:flex;
 flex-wrap:wrap;
-background:yellow;
+background:yellowgreen;
 align-items:center;
 justify-content:center;
 list-style:none;
