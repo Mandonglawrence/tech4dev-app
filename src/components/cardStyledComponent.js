@@ -28,9 +28,9 @@ box-sizing:border-box;
 display:flex;
 align-items:center;
 justify-content:center;
-height:100vh;
+/* height:100vh; */
 flex-direction:column;
-padding-top:3rem;
+/* padding-top:3rem; */
 
 `; 
 export const CastListTitle = styled.h1`
@@ -39,6 +39,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+/* padding-top:6rem */
 /* height:100vh; */
 
 `; 
