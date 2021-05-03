@@ -38,6 +38,7 @@ box-sizing:border-box;
 display:flex;
 align-items:center;
 justify-content:center;
+text-align:center;
 /* height:100vh; */
 
 `; 
