@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Cast from '../components/Cast'
 import {Background,ModalContent,ModalWrapper,CloseModalButton} from '../components/modalStyledComponents'
 import {CastListWrapper,CastListParent,CastListItem, CastListTitle} from '../components/cardStyledComponent.js'
@@ -7,20 +7,20 @@ import {BeatLoader} from 'react-spinners'
 export default function CastList() {
     const [cast, setCast] = useState([]);
     const [displayModal, setDisplayModal] = useState(false);
-    const [clickedCast, setClickedCast] = useState({})
+    const [clickedCast, setClickedCast] = useState({});
+    let getCastUrl = 'https://swapi.dev/api/people/';
     const getCastList = (url)=>{
        fetch(url)
        .then(res=> res.json())
        .then(({results})=>{
            setCast(results);
-           return results;
        }
        )
        .catch(err=>console.error(err))
     }
-    // useEffect(()=>{
-        getCastList('https://swapi.dev/api/people/');
-    // },[])
+    useEffect(()=>{
+        getCastList(getCastUrl);
+    },[getCastUrl])
 
     class User {
         constructor(name,gender,height){
