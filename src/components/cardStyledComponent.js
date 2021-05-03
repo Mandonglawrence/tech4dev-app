@@ -6,6 +6,7 @@ justify-content:center;
 align-items:center;
 width:100%;
 height:100%;
+padding-top:2rem;
 `; 
 export const CastCard = styled.div`
 display:flex;
@@ -27,8 +28,17 @@ box-sizing:border-box;
 display:flex;
 align-items:center;
 justify-content:center;
-/* background:blue; */
 height:100vh;
+flex-direction:column;
+padding-top:3rem;
+
+`; 
+export const CastListTitle = styled.h1`
+box-sizing:border-box;
+display:flex;
+align-items:center;
+justify-content:center;
+/* height:100vh; */
 
 `; 
 export const CastListParent = styled.div`
@@ -39,6 +49,8 @@ align-items:center;
 justify-content:center;
 list-style:none;
 box-sizing:border-box;
+height:100%;
+padding:4rem 2rem;
 `; 
 export const CastListItem = styled.div`
 display:flex;
@@ -71,3 +83,4 @@ list-style:none;
     background-color:red;
 }
 `; 
+
