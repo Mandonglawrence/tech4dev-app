@@ -63,4 +63,11 @@ list-style:none;
     justify-content:center;
     align-items:center;
 }
+.fallback{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color:red;
+}
 `; 
