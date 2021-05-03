@@ -1,7 +1,7 @@
-import React,{useEffect,useState} from 'react'
+import React,{useState} from 'react'
 import Cast from '../components/Cast'
 import {Background,ModalContent,ModalWrapper,CloseModalButton} from '../components/modalStyledComponents'
-import {CastListWrapper,CastListParent,CastListItem} from '../components/cardStyledComponent.js'
+import {CastListWrapper,CastListParent,CastListItem, CastListTitle} from '../components/cardStyledComponent.js'
 import {BeatLoader} from 'react-spinners'
 
 export default function CastList() {
@@ -18,9 +18,9 @@ export default function CastList() {
        )
        .catch(err=>console.error(err))
     }
-    useEffect(()=>{
+    // useEffect(()=>{
         getCastList('https://swapi.dev/api/people/');
-    })
+    // },[])
 
     class User {
         constructor(name,gender,height){
@@ -39,6 +39,8 @@ export default function CastList() {
 
     return (
             <CastListWrapper>
+                                <CastListTitle>STAR WARS CHARACTER</CastListTitle>
+
                 {cast? ( <CastListParent>
                 {cast.map((actor,pos)=> (<CastListItem key = {pos}>
                     <h1 className="actor-name" onClick={(e)=>{
