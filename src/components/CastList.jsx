@@ -67,7 +67,17 @@ export default function CastList() {
                             </ModalContent>
                         </ModalWrapper>
                     </Background>):''}
-              </CastListParent>):(<BounceLoader color='yellowgreen' size = {200}/>)}
+              </CastListParent>):(
+                  <div className="fallback" style={{
+                      display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center',
+                    flexDirection:'column',
+                    }}>
+                  <h1>loading...</h1>
+              <BounceLoader color='yellowgreen' size = {200}/>
+                  </div>
+              )}
            
             </CastListWrapper>
         
