@@ -49,7 +49,6 @@ align-items:center;
 justify-content:center;
 list-style:none;
 box-sizing:border-box;
-height:100%;
 padding:4rem 2rem;
 `; 
 export const CastListItem = styled.div`
