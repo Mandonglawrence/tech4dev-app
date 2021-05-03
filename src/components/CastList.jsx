@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 import Cast from '../components/Cast'
 import {Background,ModalContent,ModalWrapper,CloseModalButton} from '../components/modalStyledComponents'
 import {CastListWrapper,CastListParent,CastListItem} from '../components/cardStyledComponent.js'
-import {BounceLoader} from 'react-spinners'
+import {BeatLoader} from 'react-spinners'
 
 export default function CastList() {
     const [cast, setCast] = useState([]);
@@ -75,7 +75,7 @@ export default function CastList() {
                     flexDirection:'column',
                     }}>
                   <h1>loading...</h1>
-              <BounceLoader color='yellowgreen' size = {200}/>
+              <BeatLoader color='yellowgreen' size = {100}/>
                   </div>
               )}
            
